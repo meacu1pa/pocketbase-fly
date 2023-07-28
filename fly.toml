@@ -19,8 +19,8 @@ primary_region = "ams"
   processes = ["app"]
 
   [[http_service.checks]]
-  grace_period = "5s"
-  interval = "30s"
+  grace_period = "3s"
+  interval = "20s"
   method = "GET"
   timeout = "5s"
   path = "/api/health"

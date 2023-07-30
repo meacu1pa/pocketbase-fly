@@ -12,6 +12,5 @@ RUN chmod +x /pocketbase
 FROM gcr.io/distroless/static-debian11:latest-amd64
 
 COPY --from=builder /pocketbase /usr/local/bin/pocketbase
-CMD ["/usr/local/bin/pocketbase", "update"]
 EXPOSE 8080
 ENTRYPOINT ["/usr/local/bin/pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=/pb_data"]

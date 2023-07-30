@@ -6,9 +6,6 @@
 app = "api-base"
 primary_region = "ams"
 
-[deploy]
-  release_command = "/usr/local/bin/pocketbase update"
-
 [mounts]
   source = "pb_data"
   destination = "/pb_data"

@@ -6,7 +6,7 @@ app = "api-base" # URL will be https://api-base.fly.dev/
 primary_region = "ams" # data center location
 
 # Pocketbase stores data locally in a SQLite database. 
-# Therefore we need a persistent volume, which can be extended.
+# Therefore we need a persistent volume, which can be extended later.
 # See https://fly.io/docs/reference/volumes/#extend-a-volume for further info.
 [mounts]
   source = "pb_data"

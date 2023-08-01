@@ -17,6 +17,6 @@ This project has a GitHub Action configured to continuously deploy the app.
 ### CD with GitHub Action
 
 - generate a deploy token via `fly tokens create deploy -x 999999h`
-- go to your repository on GitHub and select Settings
+- go to your repository on GitHub and select `Settings`
 - under `Secrets and variables`, select `Actions`, and then create a new repository secret called `FLY_API_TOKEN` with the value of this freshly generated token
 - a push to `main` or merge a pull request to `main` will trigger a deploy action

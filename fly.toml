@@ -19,11 +19,11 @@ primary_region = "ams" # data center location
   auto_start_machines = true
   min_machines_running = 0
   processes = ["app"]
-  [http_service.concurrency]
+  [[http_service.concurrency]]
     type = "requests"
     soft_limit = 500
     hard_limit = 550
-  [http_service.checks] # This health check ensures that only a healthy app will be deployed
+  [[http_service.checks]] # This health check ensures that only a healthy app will be deployed
   grace_period = "10s"
   interval = "30s"
   method = "GET"

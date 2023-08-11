@@ -25,7 +25,7 @@ primary_region = "ams" # data center location
   soft_limit = 500
   hard_limit = 550
 
-  [http_service.checks] # This health check ensures that only a healthy app will be deployed
+  [[http_service.checks]] # This health check ensures that only a healthy app will be deployed
   grace_period = "10s"
   interval = "30s"
   method = "GET"

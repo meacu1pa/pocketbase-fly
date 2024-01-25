@@ -4,7 +4,7 @@ FROM spectado/pocketbase:0.21.1 as update-notification
 FROM alpine:3.19.0 as builder
 
 # Update this argument as soon as there is a new Pocketbase release available.
-ARG POCKETBASE_VERSION=0.20.7
+ARG POCKETBASE_VERSION=0.21.1
 
 ADD https://github.com/pocketbase/pocketbase/releases/download/v${POCKETBASE_VERSION}/pocketbase_${POCKETBASE_VERSION}_linux_amd64.zip /pocketbase.zip
 RUN unzip /pocketbase.zip

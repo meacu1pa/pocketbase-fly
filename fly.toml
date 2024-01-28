@@ -15,9 +15,9 @@ primary_region = "ams" # data center location
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = true # stops container when idling
+  auto_stop_machines = false # stops container when idling
   auto_start_machines = true
-  min_machines_running = 0
+  min_machines_running = 1
   processes = ["app"]
 
 [http_service.concurrency]

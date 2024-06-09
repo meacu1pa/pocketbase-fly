@@ -1,5 +1,5 @@
 # spectado/pocketbase is only used to get notified for new Pocketbase releases via Dependabot.
-FROM spectado/pocketbase:0.22.12 as update-notification
+FROM spectado/pocketbase:0.22.13 as update-notification
 
 FROM alpine:3.20.0 as builder
 
